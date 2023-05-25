@@ -15,9 +15,13 @@ struct list {
 };
 
 List ListNew(void) {
-	// code that returns
-	// a new list
+	// code that returns a new list
 }
+
+static struct node *nodeNew(Value v) {
+	// code that returns a new node
+}
+
 void ListAdd(List l, Value v) {
 	// code that adds value
 	// to the list
