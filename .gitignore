@@ -1,0 +1,16 @@
+# ignore itself
+.gitignore
+
+# ignore the vscode settings fils
+.vscode
+
+# ignore Makefiles
+wk1/*/Makefile
+
+# ignore .dSYM directories
+*.dSYM
+
+# ignore files without a file extension
+*
+!/**/
+!*.*

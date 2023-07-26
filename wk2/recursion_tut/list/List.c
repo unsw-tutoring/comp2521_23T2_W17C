@@ -74,8 +74,16 @@ List ListDeleteOdds(List l) {
 
 // delete every second node (second, fourth, sixth, etc. node)
 List ListDeleteSecond(List l) {
-	// TODO
-	return NULL;
+	return doListDeleteSecond(l, 1);
+}
+
+List doListDeleteSecond(List l, int pos) {
+	if (l == NULL) return NULL;
+
+	l->next = doListDeleteSecond(l, pos + 1);
+
+	if (pos % 2 == 0) return l->next;
+	return l;
 }
 
 // prints out the linked list
